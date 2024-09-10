@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votação do Condomínio</h1>
+        <div class="vote-section">
+            <h2>Escolha uma opção:</h2>
+            <form id="vote-form">
+                <label>
+                    <input type="radio" name="option" value="1"> Opção 1
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2"> Opção 2
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3"> Opção 3
+                </label>
+                <button type="submit">Votar</button>
+            </form>
+        </div>
+        <div class="results-section">
+            <h2>Resultados:</h2>
+            <p>Opção 1: <span id="count-1">0</span> votos</p>
+            <p>Opção 2: <span id="count-2">0</span> votos</p>
+            <p>Opção 3: <span id="count-3">0</span> votos</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
